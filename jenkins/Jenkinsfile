@@ -1,5 +1,9 @@
 pipeline {
     agent any
+  tools {
+        maven '3.9.2'
+        // This is the name as in Global Configuration
+    }
     stages {
         stage('Build') {
             steps {
